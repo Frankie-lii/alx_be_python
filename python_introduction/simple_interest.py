@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 
 # Define variables
-length = 10
-width = 5
+principal = 1000   # Principal amount
+rate = 0.05        # Annual interest rate (5%)
+time = 3           # Time in years
 
-# Calculate the area of the rectangle
-area = length * width
+# Calculate simple interest
+interest = principal * rate * time
 
 # Print the result
-print(f"The area of the rectangle is: {area}")
+print(f"The simple interest is: {interest}")
