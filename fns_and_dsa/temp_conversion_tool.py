@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 # Global conversion factors
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 
 def convert_to_celsius(fahrenheit):
@@ -17,8 +17,9 @@ def convert_to_fahrenheit(celsius):
 
 if __name__ == "__main__":
     try:
-        # Prompt user for input
+        # Prompt user for temperature
         temp_input = input("Enter the temperature to convert: ").strip()
+        # Input validation: must be numeric
         if not temp_input.replace(".", "", 1).lstrip("-").isdigit():
             raise ValueError("Invalid temperature. Please enter a numeric value.")
 
@@ -36,3 +37,4 @@ if __name__ == "__main__":
 
     except ValueError as e:
         print(e)
+
